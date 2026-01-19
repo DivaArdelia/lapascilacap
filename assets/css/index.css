@@ -1,0 +1,418 @@
+/* OVERLAY */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(159, 156, 156, 0.35);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+/* MODAL */
+.popup-modal {
+  width: 60%;
+  max-width: 1000px;
+  max-height: 80vh;
+  height: auto;
+  background: #0C2B4E;
+  border-radius: 26px;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+}
+
+/* CLOSE */
+.popup-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: none;
+  background: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* KIRI */
+.popup-left {
+  width: 25%;
+  padding: 70px 45px;
+  background: #F5EFE6;
+  border-right: 1px solid #F5EFE6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.popup-left img {
+  width: 72px;
+  height: 72px;
+  margin-bottom: 5px;
+  object-fit: contain;
+  opacity: 1 !important;
+  filter: none !important;
+  position: relative;
+  z-index: 5;
+}
+
+/* GARIS PEMISAH */
+.popup-divider {
+  width: 70px;
+  height: 4px;
+  background: linear-gradient(to right, #0C2B4E, #1A3D64);
+  margin: 20px 0;
+}
+
+#popup-judul {
+  color: #1f2b3a;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+
+.popup-left h2 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* KANAN */
+.popup-right {
+  width: 75%;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-right img {
+  height: 90%;
+  max-height: 620px;
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 18px 40px rgba(0,0,0,0.25);;
+  filter: none;        /* PENTING */
+  opacity: 1;  
+}
+
+
+/* ANIMASI */
+.popup-animate {
+  animation: popupShow 0.5s ease forwards;
+}
+
+    
+  /* ===== SLIDING INFORMATION ===== */
+  .carousel,
+  .carousel-inner,
+  .carousel-item {
+      margin: 0 !important;
+      padding: 0 !important;
+  }
+
+  .carousel-indicators {
+      margin-bottom: 0 !important;
+  }
+
+  .news-ticker {
+    display: flex;
+    align-items: center;
+    background-color: #f8f9fa;
+    border-top: 3px solid #EAE0CF;
+    overflow: hidden;
+    height: 50px;
+    font-family: Arial, sans-serif;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .news-label {
+    background-color: #EAE0CF;
+    color: #000;
+    padding: 0 20px;
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+  }
+
+  .news-content {
+    flex: 1;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.news-text {
+    display: flex;
+    white-space: nowrap;
+    width: max-content;
+    padding-left: 100%;
+    animation: scroll-news 30s linear infinite;
+    font-weight: 600;
+    color: #000;
+}
+
+.news-text span{
+    min-width: 100vw;
+    text-align: center;
+    white-space: normal;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+/* STATISTIK DATA */
+/* ============================= */
+/* WRAPPER STATISTIK (HORIZONTAL) */
+/* ============================= */
+.statistik-wrapper {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  align-items: stretch;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 15px;
+}
+
+/* Setiap kolom */
+.statistik-item {
+  flex: 1;
+  min-width: 0;
+}
+
+/* ============================= */
+/* CARD UTAMA */
+/* ============================= */
+.info-card {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.08);
+  height: 100%;
+  overflow: hidden;
+}
+
+.info-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+
+/* ============================= */
+/* HEADER CARD */
+/* ============================= */
+.info-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.info-header h3 {
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  margin: 0;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.info-header h3::after {
+  content: "";
+  width: 45px;
+  height: 3px;
+  background: #0d6efd;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 3px;
+}
+
+/* ============================= */
+/* KONTEN DALAM CARD */
+/* ============================= */
+.info-card.horizontal-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+/* ============================= */
+/* KIRI (TEKS DATA) */
+/* ============================= */
+.info-left {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.detail span {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.detail strong {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* Warna */
+.detail.kapasitas strong { color: #198754; }
+.detail.isi strong { color: #dc3545; }
+.detail.residivis strong { color: #fd7e14; }
+
+.detail.pria strong { color: #0d6efd; }
+.detail.wanita strong { color: #e83e8c; }
+.detail.total strong { color: #20c997; }
+
+/* ============================= */
+/* KANAN (GRAFIK) */
+/* ============================= */
+.info-right {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Chart donut */
+.chart-wrapper {
+  position: relative;
+  width: 220px;
+  height: 220px;
+}
+
+.chart-wrapper canvas {
+  width: 100% !important;
+  height: 100% !important;
+}
+
+/* Tengah donut */
+.chart-center {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.chart-center h5 {
+  margin: 0;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.chart-center h3 {
+  margin: 0;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* Bar chart */
+.info-right canvas#diagramBatangPegawai {
+    max-width: 300px;  
+    max-height: 200px;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+@media (max-width: 992px) {
+  .statistik-wrapper {
+    flex-direction: column;
+  }
+
+  .info-card.horizontal-center {
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+  }
+
+  .info-left {
+    align-items: center;
+  }
+
+  .info-left,
+  .info-right {
+    width: 100%;
+  }
+
+  .detail strong {
+    font-size: 24px;
+  }
+}
+
+
+@keyframes scroll-news {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .news-label {
+        padding: 0 12px;
+        font-size: 14px;
+    }
+    .news-text {
+        font-size: 14px;
+    }
+}
+
+@keyframes popupShow {
+  from {
+    opacity: 0;
+    transform: scale(0.85) translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .popup-modal {
+    flex-direction: column;
+    max-height: 96vh;
+    border-radius: 18px;
+  }
+
+  .popup-left,
+  .popup-right {
+    width: 100%;
+    padding: 25px;
+  }
+
+  .popup-left {
+    text-align: center;
+    align-items: center;
+  }
+
+  .popup-logo {
+    margin-top: 10px;
+  }
+
+  .popup-divider {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .popup-right img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+  }
+}

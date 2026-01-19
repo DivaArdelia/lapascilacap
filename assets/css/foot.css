@@ -1,0 +1,78 @@
+.footer-lapascilacap {
+    background-color: #eaeae1;
+}
+
+.footer-logo {
+    height: 60px;
+    filter: none !important;
+}
+
+.map-footer {
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid #ffffff;
+}
+
+.map-footer iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.social-wrapper {
+    display: flex;
+    /*justify-content: flex-start;*/
+    gap: 30px;
+
+}
+
+.social-icon {
+    text-decoration: none;
+}
+
+.social-icon i {
+    font-size: 26px;      /* ukuran ikon */
+    color: #000;          /* hitam */
+    transition: 0.3s ease;
+}
+
+.social-icon i:hover {
+    color: #444;
+    transform: scale(1.15);
+}
+
+
+/* Mobile */
+@media (max-width: 768px) {
+    .footer-lapascilacap {
+        text-align: center;
+    }
+    .map-footer {
+        height: 250px;
+    }
+    .social-mobile-center {
+        justify-content: center !important;
+    }
+    .footer-brand {
+        flex-direction: column;   /* logo di atas */
+        align-items: center !important;      /* logo center */
+        text-align: center;       /* teks center */
+    }
+    .footer-brand img {
+        display: block;
+        margin-bottom: 0 auto 12px auto;
+    }
+    .footer-brand > div {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .social-icon i {
+        font-size: 26px;
+    }
+    .social-wrapper{
+        gap: 14px;
+    }
+}

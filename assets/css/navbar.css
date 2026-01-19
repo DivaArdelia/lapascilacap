@@ -1,0 +1,138 @@
+
+.navbar-brand {
+    display: flex !important;
+    align-items: center;
+    gap: 16px;
+}
+.brand-logo {
+    height: 90px;
+     width: auto;
+}
+.brand-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.2;
+    font-size: 16px;
+}
+.brand-tittle {
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #000;
+    letter-spacing: 1.5px;
+}
+.brand-subtittle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #000;
+    letter-spacing: 1.5px;
+}
+.navbar-nav .nav-link,
+.navbar-brand {
+    color: #000 !important;
+    font-weight: 700;}
+.navbar-nav .nav-link:hover{
+    color: #333 !important;
+}
+.navbar-nav .nav-link:hover,
+.navbar-brand:hover {
+    color: #ccc !important; /* Warna teks menjadi lebih gelap */
+    background-color: rgba(0, 0, 0, 0.2); /* Latar belakang menjadi lebih gelap */
+    border-radius: 5px; /* Tambahkan border-radius untuk membuat efek lebih halus */
+}
+.navbar-brand img {
+    filter: none !important; /* Hilangkan filter pada logo */
+}
+.navbar-brand:hover img {
+    filter: none !important; /* Hilangkan filter pada logo saat hover */
+}
+/* pastikan navbar tidak memotong */
+.navbar {
+    overflow: visible !important;
+}
+.navbar-nav .nav-item.dropdown {
+    position: relative;
+}
+.navbar-nav .nav-item.dropdown .dropdown-menu {
+    display: block !important; 
+    position: absolute;
+    top: calc(100% + 8px);
+    left: 0;
+    min-width: 240px;
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 10px 0;
+    box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.25s ease;
+    z-index: 9999;
+}
+.navbar-nav .nav-item.dropdown::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 20px;
+}
+.dropdown-item {
+    padding: 12px 20px;
+    font-weight: 500;
+    color: #1e293b;
+    transition: background 0.2s ease, padding-left 0.2s ease;
+}
+
+.dropdown-item:hover {
+    background: #f1f5f9;
+    padding-left: 28px;
+}
+
+.dropdown-divider {
+    margin: 6px 0;
+    border-top: 1px solid #ddd;
+}
+
+/* tampil saat hover */
+.navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+        
+/* responsive adjust */
+@media (max-width: 600px) {
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+    .navbar-brand {
+        font-size: 1rem;
+    }
+    .navbar-nav .nav-link {
+        font-size: 0.9rem;
+        padding: 0.5rem 0;
+    }
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.8rem;
+    }
+    .brand-logo{
+        height: 55px;
+    }
+    .brand-tittle {
+        font-size: 1rem;
+    }
+    .brand-subtittle {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 300px) {
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+    }
+}
+  
