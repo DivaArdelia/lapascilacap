@@ -1,0 +1,69 @@
+.menu-card {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 20px;
+    width: 360px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.menu-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.menu-icon {
+    background: #009688;
+    color: #fff;
+    padding: 16px;
+    border-radius: 10px;
+    font-size: 22px;
+}
+
+.menu-header h4 {
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.submenu-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.submenu-card {
+    background: #f8f9fa;
+    border-radius: 10px;
+    padding: 16px 10px;
+    text-align: center;
+    text-decoration: none;
+    color: #333;
+    transition: 0.3s;
+    border: 1px solid #e3e3e3;
+}
+
+.submenu-card i {
+    font-size: 22px;
+    color: #0d6efd;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.submenu-card span {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.submenu-card:hover {
+    background: #0d6efd;
+    color: #fff;
+    transform: translateY(-4px);
+}
+
+.submenu-card:hover i {
+    color: #fff;
+}
